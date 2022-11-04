@@ -2,7 +2,7 @@ services:
   mosquitto:
     image: eclipse-mosquitto:2
     volumes:
-      - ./config/:/mosquitto/config/
+      - ./config/:/mosquitto/config:ro
       - ./log/:/mosquitto/log/
       - data:/mosquitto/data/
     ports:

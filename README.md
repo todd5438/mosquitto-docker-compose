@@ -61,3 +61,7 @@ docker-compose exec mosquitto mosquitto_passwd -b /mosquitto/config/password.txt
 ```bash
 docker-compose exec mosquitto mosquitto_passwd -D /mosquitto/config/password.txt user
 ```
+
+
+##  todd  memo 在docker內  增加user: todd 他會問密碼
+/ # mosquitto_passwd -c /mosquitto/config/password.txt todd
